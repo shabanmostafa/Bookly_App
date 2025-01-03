@@ -10,7 +10,7 @@ class CustomListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 2.8/4,
+      aspectRatio: 2.5/4,
       child: Container(
         decoration: const BoxDecoration(
           color: Colors.red,
