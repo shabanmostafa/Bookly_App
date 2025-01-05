@@ -23,6 +23,6 @@ class BookRating extends StatelessWidget {
          ],
        ),
      ],
-                    );
+    );
   }
 }
