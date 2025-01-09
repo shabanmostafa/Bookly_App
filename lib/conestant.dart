@@ -1,4 +1,3 @@
+const kTransationDuration = Duration(milliseconds: 250);
 
-const kTransationDuration=Duration(milliseconds: 250);
-
-const kGTSectraFine='GT Sectra Fine';
+const kGTSectraFine = 'GT Sectra Fine';

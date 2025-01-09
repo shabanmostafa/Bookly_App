@@ -3,8 +3,7 @@ import 'package:bookly_app/core/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
-void main(){
+void main() {
   runApp(const BooklyApp());
 }
 
@@ -13,8 +12,9 @@ class BooklyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp.router( /// GetMaterialApp to easy to navigation
-    routerConfig: AppRouter.router,
+    return MaterialApp.router(
+      /// GetMaterialApp to easy to navigation
+      routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: AppColors.kPrimaryColor,
@@ -23,5 +23,3 @@ class BooklyApp extends StatelessWidget {
     );
   }
 }
-
-
