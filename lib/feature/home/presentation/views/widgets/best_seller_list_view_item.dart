@@ -20,7 +20,7 @@ class BestSellerListViewItem extends StatelessWidget {
         child: Row(
           children: [
             AspectRatio(
-              aspectRatio: 2.9 / 4,
+              aspectRatio: 2.9/ 4,
               child: Padding(
                 padding: const EdgeInsets.only(right: 12.0),
                 child: Container(
