@@ -6,8 +6,8 @@ import 'package:bookly_app/feature/home/presentation/views/widgets/book_rating.d
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({
     super.key,
   });
 
@@ -20,7 +20,7 @@ class BestSellerListViewItem extends StatelessWidget {
         child: Row(
           children: [
             AspectRatio(
-              aspectRatio: 2.9/ 4,
+              aspectRatio: 2.9 / 4,
               child: Padding(
                 padding: const EdgeInsets.only(right: 12.0),
                 child: Container(
@@ -30,7 +30,8 @@ class BestSellerListViewItem extends StatelessWidget {
                       Radius.circular(10),
                     ),
                     image: DecorationImage(
-                        image: AssetImage(AssetsApp.testImage), fit: BoxFit.fill),
+                        image: AssetImage(AssetsApp.testImage),
+                        fit: BoxFit.fill),
                   ),
                 ),
               ),
@@ -44,9 +45,10 @@ class BestSellerListViewItem extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width * .5,
-                    child:  Text(
+                    child: Text(
                       'Harry Potter and the Goblet of Fire',
-                      style: Styles.textStyle20.copyWith(fontFamily: kGTSectraFine),
+                      style: Styles.textStyle20
+                          .copyWith(fontFamily: kGTSectraFine),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -54,7 +56,7 @@ class BestSellerListViewItem extends StatelessWidget {
                   const SizedBox(
                     height: 3,
                   ),
-                   const Text(
+                  const Text(
                     'J.K. Rowling',
                     style: Styles.textStyle14,
                   ),
@@ -63,7 +65,11 @@ class BestSellerListViewItem extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Text('19.99 ',style: Styles.textStyle20.copyWith(fontWeight: FontWeight.bold),),
+                      Text(
+                        '19.99 ',
+                        style: Styles.textStyle20
+                            .copyWith(fontWeight: FontWeight.bold),
+                      ),
                       const Spacer(),
                       const BookRating(),
                     ],
@@ -77,4 +83,3 @@ class BestSellerListViewItem extends StatelessWidget {
     );
   }
 }
-
