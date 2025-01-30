@@ -13,6 +13,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'feature/home/presentation/manger/newset_books_cubit/newset_books_cubit.dart';
 
 void main() {
+  setupServiceLocator();
   runApp(const BooklyApp());
 }
 
