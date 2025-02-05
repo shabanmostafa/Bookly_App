@@ -14,7 +14,7 @@ import 'package:get_it/get_it.dart';
 /// then we will register all dependencies in service locator file
 
 final getIt = GetIt.instance;
-void setup() {
+void setupServiceLocator() {
   getIt.registerSingleton<ApiService>(
     ApiService(
       Dio(),
